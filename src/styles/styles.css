@@ -445,6 +445,85 @@ ul {
   font-size: 15pt;
 }
 
+.type .mainPanel {
+  width: 100;
+  background-color: #e5ebf1;
+  background-image: url("../../../assets/images/background.svg");
+}
+
+.type .mainPanel .mainText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin-top: 3%;
+}
+
+.type .mainPanel .mainText h1 {
+  font-size: 60pt;
+  width: 95%;
+}
+
+.type .mainPanel .mainText p {
+  font-size: 25pt;
+  width: 95%;
+}
+
+.type .mainPanel .typePanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin-top: 20px;
+}
+
+.type .mainPanel .typePanel > h2 {
+  width: 95%;
+}
+
+.type .mainPanel .typePanel .typeChoices {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-top: 10px;
+}
+
+.type .mainPanel .typePanel .typeChoices .form-group {
+  margin: 0 5px;
+}
+
+.type .mainPanel .forwardBackwardButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.type .mainPanel .forwardBackwardButtons .mainButton {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  flex-direction: row-reverse;
+}
+
+.type .mainPanel .forwardBackwardButtons .mainButton .pageTransitionButton .green-button {
+  display: flex;
+  background-color: #1eb21e;
+  color: #fcfcfc;
+  padding: 10px 20px;
+  font-size: 20pt;
+  font-weight: 700;
+  border-radius: 10px;
+  width: max-content;
+  transition: 0.3s ease all;
+}
+
+.type .mainPanel .forwardBackwardButtons .mainButton .pageTransitionButton .green-button:hover {
+  transform: scale(1.1);
+}
+
+.type .mainPanel .forwardBackwardButtons .mainButton .green-button {
+  margin: 10px;
+}
+
 .result {
   display: flex;
 }

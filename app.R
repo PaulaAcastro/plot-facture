@@ -36,6 +36,17 @@ ui <- tags$html(
 
 server <- function(input, output, session){
   router(input, output, session) #shiny.router
+  
+  session$userData$dataframe <- reactiveValues(
+    data = NULL
+  )
+  
+  session$userData$plotOptions <- reactiveValues(
+    type = NULL,
+    x = NULL,
+    y = NULL,
+    groupBy = NULL
+  )
 }
 
 
