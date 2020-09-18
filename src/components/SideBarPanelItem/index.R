@@ -21,7 +21,7 @@ sideBarPanelItemServer <- function(id, label, ref){ # label é o nome da pag
           )
         )
       })
-      onclick("button", if(!is_page(ref)) change_page(ref))
+     # onclick("button", if(!is_page(ref)) change_page(ref))
     }
   )
 }

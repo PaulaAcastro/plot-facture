@@ -1,0 +1,8 @@
+
+@import "../../components/SideBarPanel/styles";
+
+.edition{
+  display: flex;
+  
+  @include sideBarPanel();
+}

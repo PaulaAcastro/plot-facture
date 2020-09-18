@@ -1,0 +1,14 @@
+
+@import "../../../components/PageTransitionButton/styles";
+
+@mixin mainButton{
+  .mainButton{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+  
+    @include pageTransitionButton();
+  
+    @content;
+  }
+}

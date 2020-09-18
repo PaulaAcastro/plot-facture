@@ -10,8 +10,8 @@ sideBarPanel <- function(id){
       class = "navigation",
       sideBarPanelItem(id = ns("home")),
       sideBarPanelItem(id = ns("dataImport")),
-      sideBarPanelItem(id = ns("edition")),
       sideBarPanelItem(id = ns("type")),
+      sideBarPanelItem(id = ns("edition")),
       sideBarPanelItem(id = ns("result"))
     ),
     tags$div(
@@ -33,10 +33,10 @@ sideBarPanelServer <- function(id){
         id = "dataImport", ref = "dataImport", label = "Importando Dados"
       )
       sideBarPanelItemServer(
-        id = "edition", ref = "edition", label = "Edição"
+        id = "type", ref = "type", label = "Tipo de Gráfico"
       )
       sideBarPanelItemServer(
-        id = "type", ref = "type", label = "Tipo de Dado"
+        id = "edition", ref = "edition", label = "Edição"
       )
       sideBarPanelItemServer(
         id = "result", ref = "result", label = "Resultado"

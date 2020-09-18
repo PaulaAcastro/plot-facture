@@ -1,0 +1,7 @@
+@import "../../components/SideBarPanel/styles";
+
+.result{
+  display: flex;
+  
+  @include sideBarPanel();
+}

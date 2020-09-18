@@ -1,0 +1,16 @@
+
+@import "../ImportDataButton/styles";
+@import "../../functions/ui/MainButton/styles";
+@import "../DisplayDataframe/styles";
+
+@mixin importPanel{
+  .importPanel{
+  @include mainButton(){
+    margin: 20px 0 0 5%;
+    
+    @include importDataButton();
+    }
+    
+    @include displayDataframe();
+  }
+}
