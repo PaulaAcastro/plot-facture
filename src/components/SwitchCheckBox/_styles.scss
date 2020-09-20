@@ -1,0 +1,68 @@
+
+@mixin switchCheckBox{
+  .switch_container{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    
+    .switch_content{
+      display: flex;
+      align-items: center;
+      
+      .switch{
+        visibility: hidden;
+        
+        & + label {
+          display: block;
+          position: relative;
+          cursor: pointer;
+          outline: none;
+          user-select: none;
+        }
+      }
+      
+      .switch--shadow + label{
+        padding: 2px;
+        width: 52px;
+        height: 32px;
+        background-color: #dddddd;
+        border-radius: 32px;
+        
+        &:before,
+        &:after{
+          display: block;
+          position: absolute;
+          top: 1px;
+          left: 1px;
+          bottom: 1px;
+          content: "";
+        }
+        
+        &:before{
+          right: 1px;
+          background-color: #f1f1f1;
+          border-radius: 60px;
+          transition: all 0.4s;
+        }
+        
+        &:after{
+          width: 31px;
+          background-color: #ffffff;
+          border-radius: 100%;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          transition: all 0.4s;
+        }
+      }
+      
+      .switch--shadow:checked + label{
+        &:before{
+          background-color: #333333;
+        }
+        
+        &:after{
+          transform: translateX(20px);
+        }
+      }
+    }
+  }
+}

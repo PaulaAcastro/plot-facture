@@ -1,0 +1,10 @@
+
+@import "../DisplayPlot/styles";
+@import "../CodePlot/styles";
+
+@mixin resultPanel{
+  .resultPanel{
+    @include displayPlot();
+    @include codePlot();
+  }
+}

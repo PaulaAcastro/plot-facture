@@ -1,0 +1,13 @@
+
+@mixin codePlot{
+  .blue-border{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 2.5%;
+    height: 425px;
+    width: 95%;
+    border: 5px solid $base-blue !important;
+    background-color: $base-white;
+    overflow: scroll;
+  }
+}
